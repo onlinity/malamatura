@@ -1,0 +1,211 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Horisontal scrol disable*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-right: 10px;
+}
+
+header img{
+    height: 60px;
+}
+
+/*Loading*/
+.center{
+    margin: 350px auto;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top-color: midnightblue;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+body{
+    background-color: white;
+}
+
+
+.commingtime{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(69, 69, 69);
+}
+
+.time{
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(69, 69, 69);
+}
+
+.commingtime h2{
+    font-size: 60px;
+    margin-bottom: -10px;
+}
+
+
+.time p{
+    margin-bottom: -10px;
+    font-size: 60px;
+}
+
+.time div{
+    flex-basis: 100px;
+}
+
+
+.activities{
+    display: flex;
+}
+
+@media (width < 600px){
+    .activities{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .activities button{
+        margin-top: -80px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 80vw;
+        padding: 0;
+    }
+    .commingtime h2{
+        font-size: 40px;
+    }
+    .column{
+        margin-bottom: 0;
+    }
+}
+
+.activities button{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 40%;
+    margin-right: 20%;
+    width: auto;
+    max-width: 80%;
+}
+
+
+.column{
+    float: left;
+    display: block;
+    margin: 15px;
+    width: 100vw;
+    margin-left: 20px;
+}
+
+.column h3{
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+.activity p{
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-right: 8px;
+    max-width: 70vw;
+    word-wrap: break-word;
+}
+
+#datum{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.actv{
+    font-style: italic;
+}
+
+.activities button{
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 3px solid #3a7ed2;
+    padding: 8px;
+}
+
+.activities button:hover{
+    border: 3px solid #777;
+    cursor: pointer;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.5;
+    z-index: -2;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 15px;
+    color: rgb(69, 69, 69);
+}
+
+.media .fa, .fa-solid{
+    color: #3a7ed2;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
