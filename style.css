@@ -148,7 +148,7 @@ body{
     word-wrap: break-word;
 }
 
-#datum{
+#datum, #d{
     font-weight: bold;
     font-style: italic;
 }
