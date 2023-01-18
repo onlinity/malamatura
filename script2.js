@@ -1,6 +1,4 @@
-import { activities } from "./activities";
-
-
+import { activities } from "./script";
 
         const dict2 = activities
     
